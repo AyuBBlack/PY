@@ -1,7 +1,6 @@
-found = 0
-words = input("Введите слово:")
-simbol = input("Символ который ищем:")
-for i in words:
-    if i == simbol:
-        found += 1
-print(found)
+word = 'ProgRaMMer,rOll,burGer'
+a = (word.split(","))
+for i in range(len(a)):
+    a[i] = a[i].capitalize()
+result = ", ".join(a)
+print(result)
