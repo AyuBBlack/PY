@@ -1,13 +1,14 @@
-tuple_1 = (1,2,3,4,5)
-# print(len(tuple_1))
+person = {'User_1': {
+    'firstname': 'Ayub',
+    'lastname': 'Gadiev',
+    'age': 24,
+    'address': ['Чечня', 'г. Грозный']
+    },
+    'User_2': {
+    'firstname': 'Ayub',
+    'lastname': 'Gadiev',
+    'age': 24
+    }
+}
 
-for i in tuple_1:
-    print(i)
-
-data = [4,5,6,7]
-new_date = tuple(data)
-print(new_date)
-
-word = "Hello"
-new_word = tuple(word)
-print(new_word)
+print(person['User_1']['address'][0])
