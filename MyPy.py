@@ -1,9 +1,5 @@
-# data = set('Hello')
-data = {1,4,5,6,7,7,5,4,3}
+def summa(a, b):
+    return a + b
 
-data.add(23)
-data.update([23, 4, 6, True, "Йоу"])
 
-new = frozenset([1,4,5,6,7,7,5,4,3,23, 4, 6, True, "Йоу"])
-
-print(new)
+print(summa(4, 5))
