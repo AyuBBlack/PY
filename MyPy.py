@@ -1,5 +1,10 @@
-def summa(a, b):
-    return a + b
+def minimal(lis):
+    min_numb = lis[0]
+    for el in lis:
+        if el < min_numb:
+            min_numb = el
+    print(min_numb)
 
 
-print(summa(4, 5))
+nums = [2, 5, 6, 5, 2, 2, 1, 1]
+minimal(nums)
