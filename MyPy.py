@@ -1,14 +1,5 @@
-first_numb = 0
-while first_numb == 0:
-    try:
-        first_numb = int(input('Введите первое число: '))
-        second_numb = int(input('Введите второе число: '))
-
-        def summa(c, d):
-            return c + d
-    except ValueError:
-        print('Введите целое число')
-    else:
-        print('Сумма чисел:', summa(first_numb, second_numb))
-    finally:
-        print("Сработал Finally")
+try:
+    with open('../data/text.txt', 'r', encoding='utf-8') as file:
+        print(file.read())
+except FileNotFoundError:
+    print('Файл не найден')
