@@ -1,14 +1,7 @@
-# data = input('Введите текст: ')
-# file = open('../data/text.txt', 'w')
-#
-# file.write(data)
-#
-# file.close()
-
-file = open('../data/text.txt', 'r')
-
-# print(file.read())
-
-for line in file:
-    print(line, end='')
-file.close()
+x = 0
+while x == 0:
+    try:
+        x = int(input('Введите число: '))
+        print(x)
+    except ValueError:
+        print('Введите целое число')
