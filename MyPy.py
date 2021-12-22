@@ -1,5 +1,5 @@
-try:
-    with open('../data/text.txt', 'r', encoding='utf-8') as file:
-        print(file.read())
-except FileNotFoundError:
-    print('Файл не найден')
+import datetime as dt, sys, os, platform
+from math import sqrt as sq, ceil
+# print(dt.datetime.now().time())
+# print(platform.system())
+print(ceil(sq(125)))
