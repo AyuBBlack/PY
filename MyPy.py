@@ -1,18 +1,23 @@
-class cat:
+class Cat:
     name = None
     age = None
     isHappy = None
 
+    def set_data(self, name, age, isHappy):
+        self.name = name
+        self.age = age
+        self.isHappy = isHappy
 
-cat_1 = cat()
-cat_1.name = "Boris"
-cat_1.age = 1
-cat_1.isHappy = True
+    def get_data(self):
+        print(self.name, 'Возраст:', self.age, '. Кот счастлив?', self.isHappy)
 
-cat_2 = cat()
-cat_2.name = "Lupen"
-cat_2.age = 2
-cat_2.isHappy = False
 
-print(cat_1.name)
-print(cat_2.name)
+cat_1 = Cat()
+cat_1.set_data("Борис", 2, True)
+
+cat_2 = Cat()
+cat_2.set_data("Люпен", 1, False)
+
+cat_1.get_data()
+cat_2.get_data()
+
