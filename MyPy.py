@@ -3,6 +3,10 @@ class Cat:
     age = None
     isHappy = None
 
+    def __init__(self, name, age, isHappy):
+        self.set_data(name, age, isHappy)
+        self.get_data()
+
     def set_data(self, name, age, isHappy):
         self.name = name
         self.age = age
@@ -12,12 +16,5 @@ class Cat:
         print(self.name, 'Возраст:', self.age, '. Кот счастлив?', self.isHappy)
 
 
-cat_1 = Cat()
-cat_1.set_data("Борис", 2, True)
-
-cat_2 = Cat()
-cat_2.set_data("Люпен", 1, False)
-
-cat_1.get_data()
-cat_2.get_data()
-
+cat_1 = Cat("Борис", 2, True)
+cat_2 = Cat("Люпен", 1, False)
