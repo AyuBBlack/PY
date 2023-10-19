@@ -1,5 +1,10 @@
-long_str = """This is long 
+n = int(input("Введите элемент: "))
+list = []
 
-string"""
-print(long_str)
-print(type(long_str))
+i = 0
+while i < n:
+    list.append(i)
+    print(i)
+    i += 1
+
+print(len(list))
