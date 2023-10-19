@@ -1,10 +1,5 @@
-n = int(input("Введите элемент: "))
-list = []
+def polindrome(s):
+    return s == s[::-1]
 
-i = 0
-while i < n:
-    list.append(i)
-    print(i)
-    i += 1
 
-print(len(list))
+print(polindrome('python'))
